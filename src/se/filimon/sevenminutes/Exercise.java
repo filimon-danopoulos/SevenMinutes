@@ -1,3 +1,5 @@
+package se.filimon.sevenminutes;
+
 // A data bearing class that is used as a model of an exercise.
 public class Exercise {
     // Construct an exercise without a switch
