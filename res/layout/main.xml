@@ -17,10 +17,12 @@
             android:text="Start"
             android:textAllCaps="true"
             android:textSize="50dip"
-            android:layout_marginTop="10dip"/>
+            android:layout_marginTop="10dip"
+            android:id="@+id/start_button"/>
     <Button android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Settings"
-            android:layout_marginTop="5dip"/>
+            android:layout_marginTop="5dip"
+            android:textSize="25dip"/>
 </LinearLayout>
 

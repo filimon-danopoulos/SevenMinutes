@@ -2,6 +2,9 @@ package se.filimon.sevenminutes;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
     /**
@@ -10,6 +13,17 @@ public class MainActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        this.setContentView(R.layout.main);
+
+
+
+        Button startButton = (Button) this.findViewById(R.id.start_button);
+        startButton.setOnClickListener(startButtonClickedListener);
     }
+
+    private View.OnClickListener startButtonClickedListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+        }
+    };
 }
