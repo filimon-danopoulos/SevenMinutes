@@ -6,6 +6,8 @@ to write an application instructing you on how the workout should be done.
 
 #History
 
+The project is not complete and is still under active development. With this said feel free to look around.
+
 I have actually already written the application, but since my Ubuntu One sync messed up and the source was lost I will rewrite it.
 The application was in for some refactoring anyhow and since it is a small project I figured I might as well redo the whole thing.
 
