@@ -13,7 +13,7 @@ The application was in for some refactoring anyhow and since it is a small proje
 #Contribution
 I have absolutely no idea how you should get this project to work if you want to clone it. I am not a Java-developer so
 the environment is confusing and alien. I used IntelliJ IDEA version 12.1.4 if that is of any help. Don't bother me with
-questions regarding get things up and running because I would probably not know the answer.
+questions regarding how to get things up and running because I would probably not know the answer.
 
 #License and the like
 
