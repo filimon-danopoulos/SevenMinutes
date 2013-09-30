@@ -7,7 +7,6 @@ public class Exercise {
         this.name = name;
         this.duration = duration;
         this.startMessage = "";
-        this.endMessage = "";
 
         this.switchMessage = "";
         this.hasSwitch = false;
@@ -15,10 +14,9 @@ public class Exercise {
     }
 
     // Construct an exercise without a switch
-    public Exercise(String name, int duration, String startMessage, String endMessage) {
+    public Exercise(String name, int duration, String startMessage) {
         this(name, duration);
         this.startMessage = startMessage;
-        this.endMessage = endMessage;
     }
 
 
@@ -31,8 +29,8 @@ public class Exercise {
 
 
     // Construct an exercise with a switch
-    public Exercise(String name, int duration, String startMessage, String endMessage, String switchMessage, int switchTime) {
-        this(name, duration, startMessage, endMessage);
+    public Exercise(String name, int duration, String startMessage, String switchMessage, int switchTime) {
+        this(name, duration, startMessage);
 
         this.switchMessage = switchMessage;
         this.hasSwitch = true;
@@ -45,7 +43,6 @@ public class Exercise {
     // Messages to play during execution
     private String startMessage;
     private String switchMessage;
-    private String endMessage;
 
     // Duration, and time of switch
     private int duration;
@@ -63,9 +60,6 @@ public class Exercise {
     }
     public String getSwitchMessage() {
         return switchMessage;
-    }
-    public String getEndMessage() {
-        return endMessage;
     }
     public int getDuration() {
         return duration;

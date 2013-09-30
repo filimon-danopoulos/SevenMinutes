@@ -21,15 +21,6 @@ public class ExerciseActivity extends Activity{
     private TextView countDown;
     private Handler handler;
 
-    private TextToSpeech.OnInitListener ttsOnInitListener = new TextToSpeech.OnInitListener() {
-        @Override
-        public void onInit(int status) {
-           if (status == TextToSpeech.SUCCESS) {
-               tts.setLanguage(Locale.ENGLISH);
-           }
-        }
-    };
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,18 +28,25 @@ public class ExerciseActivity extends Activity{
         // Initiate state
         this.app = (SevenMinutesApplication) this.getApplication();
         this.exercise = this.app.getNextExercise();
-        this.tts = new TextToSpeech(this, this.ttsOnInitListener);
+        this.tts = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+                @Override
+                public void onInit(int status) {
+                }
+            }
+        );
         this.handler = new Handler() {
             @Override
             public void handleMessage(Message msg) {
                 if(msg.what == COUNTDOWN_MESSAGE) {
-                    ExerciseActivity.this.continueCountDown();
+                    ExerciseActivity.this.handleCountDownTick();
                 }
             }
         };
+        this.tts.setLanguage(Locale.ENGLISH);
 
         this.timeRemaining = this.exercise.getDuration();
 
+        this.overridePendingTransition(R.anim.shrink_to_left, R.anim.expand_from_right);
         this.setContentView(R.layout.exercise);
 
         TextView title = (TextView) this.findViewById(R.id.exercise_name);
@@ -57,7 +55,11 @@ public class ExerciseActivity extends Activity{
         TextView nextExercise = (TextView) this.findViewById(R.id.exercise_next);
         nextExercise.setText(app.getNextExerciseName());
 
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
         this.countDown = (TextView) this.findViewById(R.id.exercise_countdown);
         this.startCountDown();
     }
@@ -73,27 +75,28 @@ public class ExerciseActivity extends Activity{
     }
 
     private void startCountDown() {
-        this.countDown.setText(Integer.toString(this.timeRemaining));
-        if (this.exercise.getStartMessage() != "") {
-            this.tts.speak(this.exercise.getStartMessage(), TextToSpeech.QUEUE_FLUSH, null);
-        }
-        this.handler.sendEmptyMessageDelayed(COUNTDOWN_MESSAGE, 1000);
+        handleCountDownTick();
     }
 
 
-    private void continueCountDown() {
-        this.timeRemaining--;
-        this.countDown.setText(Integer.toString(this.timeRemaining));
+    private void handleCountDownTick() {
         if(this.timeRemaining == 0) {
             Intent intent = new Intent(this, ExerciseActivity.class);
-            if (exercise.getEndMessage() != "") {
-                this.tts.speak(this.exercise.getEndMessage(), TextToSpeech.QUEUE_FLUSH, null);
-            }
             this.startActivity(intent);
             this.finish();
         } else {
-            this.tts.speak(Integer.toString(this.timeRemaining), TextToSpeech.QUEUE_ADD, null);
+            this.countDown.setText(Integer.toString(this.timeRemaining));
+            if (!this.tts.isSpeaking()) {
+                if (this.timeRemaining == this.exercise.getDuration() - 1 && !this.exercise.getStartMessage().isEmpty()) {
+                    this.tts.speak(this.exercise.getStartMessage(), TextToSpeech.QUEUE_FLUSH, null);
+                } else if (this.timeRemaining == 20 || this.timeRemaining == 10) {
+                    this.tts.speak(Integer.toString(this.timeRemaining)+ " seconds left.", TextToSpeech.QUEUE_FLUSH, null);
+                } else if (this.timeRemaining <= 5) {
+                    this.tts.speak(Integer.toString(this.timeRemaining), TextToSpeech.QUEUE_FLUSH, null);
+                }
+            }
             this.handler.sendEmptyMessageDelayed(COUNTDOWN_MESSAGE, 1000);
         }
+        this.timeRemaining--;
     }
 }

@@ -15,11 +15,21 @@ public class MainActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        this.overridePendingTransition(R.anim.shrink_to_left, R.anim.expand_from_right);
+
         this.setContentView(R.layout.main);
 
         Button startButton = (Button) this.findViewById(R.id.start_button);
         startButton.setOnClickListener(startButtonClickedListener);
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        SevenMinutesApplication app = (SevenMinutesApplication) this.getApplication();
+        app.reset();
     }
 
     private View.OnClickListener startButtonClickedListener = new View.OnClickListener() {

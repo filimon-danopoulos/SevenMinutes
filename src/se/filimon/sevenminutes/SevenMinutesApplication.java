@@ -10,6 +10,10 @@ public class SevenMinutesApplication extends Application {
     private ArrayList<Exercise> exercises = new ArrayList<Exercise>();
     private int current = 0;
 
+    public void reset() {
+        this.current = 0;
+    }
+
     public void addExercise(Exercise exercise) {
         this.exercises.add(exercise);
     }
@@ -52,13 +56,13 @@ public class SevenMinutesApplication extends Application {
 
     private void addExercise(Exercise exercise, boolean isFirst, boolean isLast) {
         if (!isFirst) {
-            this.addExercise(new Exercise("Rest", 10, "Now rest, the next exercise is " + exercise.getName(), "Go"));
+            this.addExercise(new Exercise("Rest", 10, "Now rest. The next exercise is " + exercise.getName()));
         } else {
-            this.addExercise(new Exercise("Start ", 10, "The first exercise is " + exercise.getName(), "Go"));
+            this.addExercise(new Exercise("Start ", 10, "The first exercise is " + exercise.getName()));
         }
         this.addExercise(exercise);
         if (isLast) {
-            this.addExercise(new Exercise("Stop", 10, "Good job! You are done.", ""));
+            this.addExercise(new Exercise("Stop", 10, "Good job! You are done."));
         }
 
     }
