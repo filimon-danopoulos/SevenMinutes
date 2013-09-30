@@ -25,6 +25,7 @@ public class ExerciseActivity extends Activity implements TextToSpeech.OnInitLis
 
     /**
      * Creates an instance of this activity. Instantiates all local state and sets the text of the TextViews appropriately.
+     * Starts countdown.
      */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,7 +43,6 @@ public class ExerciseActivity extends Activity implements TextToSpeech.OnInitLis
                 }
             }
         };
-        this.tts.speak("TEST TEST TEST", TextToSpeech.QUEUE_FLUSH, null);
 
         this.timeRemaining = this.exercise.getDuration();
 
@@ -55,14 +55,6 @@ public class ExerciseActivity extends Activity implements TextToSpeech.OnInitLis
         TextView nextExercise = (TextView) this.findViewById(R.id.exercise_next);
         nextExercise.setText(app.getNextExerciseName());
 
-    }
-
-    /***
-     * Gets called just before the user sees the view. Used to trigger the countdown.
-     */
-    @Override
-    protected void onResume() {
-        super.onResume();
         this.countDown = (TextView) this.findViewById(R.id.exercise_countdown);
         this.startCountDown();
     }
@@ -73,21 +65,26 @@ public class ExerciseActivity extends Activity implements TextToSpeech.OnInitLis
     @Override
     protected void onPause() {
         super.onPause();
-        this.handler.removeMessages(COUNTDOWN_MESSAGE);
-        if (this.tts != null) {
+        this.handler.removeMessages(COUNTDOWN_MESSAGE); // Remove all messages
+        if (this.tts != null) { // Terminate tts.
             this.tts.stop();
             this.tts.shutdown();
         }
     }
 
     /***
-     * Handles instantiation of the text to speech engine. Sets language to english. Showws a Toast if any error occurs.
+     * Handles instantiation of the text to speech engine. Sets language to english. Shows a Toast if any error occurs.
+     * Also says any opening phrase
      * @param status TTS engine status.
      */
     @Override
     public void onInit(int status) {
         if (status == TextToSpeech.SUCCESS) {
             this.tts.setLanguage(Locale.ENGLISH);
+            // We only want to say the start message if the TTS engine is initialized.
+            if (!this.exercise.getStartMessage().isEmpty()) {
+                this.say(this.exercise.getStartMessage());
+            }
         } else {
             Toast t = Toast.makeText(ExerciseActivity.this, "Could not init TTS", Toast.LENGTH_LONG);
             t.show();
@@ -98,9 +95,6 @@ public class ExerciseActivity extends Activity implements TextToSpeech.OnInitLis
      * Says opening phrase if any and starts countdown
      */
     private void startCountDown() {
-        if (!this.exercise.getStartMessage().isEmpty()) {
-            this.tts.speak(this.exercise.getStartMessage(), TextToSpeech.QUEUE_FLUSH, null);
-        }
         handleCountDownTick();
     }
 
@@ -110,23 +104,32 @@ public class ExerciseActivity extends Activity implements TextToSpeech.OnInitLis
      */
     private void handleCountDownTick() {
         if(this.timeRemaining == 0) {
+            // We open the next activity if countdown is done.
             Intent intent = new Intent(this, ExerciseActivity.class);
             this.startActivity(intent);
             this.finish();
         } else {
+            // Otherwise we set the TextView and conditionally say a message
             this.countDown.setText(Integer.toString(this.timeRemaining));
-            if (!this.tts.isSpeaking()) {
-                if (this.exercise.hasSwitch() && this.timeRemaining == this.exercise.getSwitchTime()) {
-                    this.tts.speak(this.exercise.getSwitchMessage(), TextToSpeech.QUEUE_FLUSH, null);
-                } else if (this.timeRemaining == 20 || this.timeRemaining == 10) {
-                    this.tts.speak(Integer.toString(this.timeRemaining)+ " seconds left.", TextToSpeech.QUEUE_FLUSH, null);
-                } else if (this.timeRemaining <= 5) {
-                    this.tts.speak(Integer.toString(this.timeRemaining), TextToSpeech.QUEUE_FLUSH, null);
-                }
+            if (this.exercise.hasSwitch() && this.timeRemaining == this.exercise.getSwitchTime()) {
+                this.say(this.exercise.getSwitchMessage());
+            } else if (this.timeRemaining == 20 || this.timeRemaining == 10) {
+                this.say(Integer.toString(this.timeRemaining)+ " seconds left.");
+            } else if (this.timeRemaining <= 5) {
+                this.say(Integer.toString(this.timeRemaining));
             }
-            this.handler.sendEmptyMessageDelayed(COUNTDOWN_MESSAGE, 1000);
+            this.handler.sendEmptyMessageDelayed(COUNTDOWN_MESSAGE, 1000); // Trigger next message in 1 sec
         }
-        this.timeRemaining--;
+        this.timeRemaining--; // Decrement time left.
     }
 
+    /***
+     * Wraps TextToSpeak#speak method for cleaner code. No params and queue mode flush set.
+     * @param message The message to speak with TTS.
+     */
+    private void say(String message) {
+        if (!this.tts.isSpeaking()) { // We don't speak if we are already speaking.
+            this.tts.speak(message, TextToSpeech.QUEUE_FLUSH, null);
+        }
+    }
 }
