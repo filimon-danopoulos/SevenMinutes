@@ -9,18 +9,23 @@ import android.os.Message;
 import android.speech.tts.TextToSpeech;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Locale;
 
-public class ExerciseActivity extends Activity{
-    private static int COUNTDOWN_MESSAGE = 1337;
-    private int timeRemaining;
-    private Exercise exercise;
-    private SevenMinutesApplication app;
-    private TextToSpeech tts;
-    private TextView countDown;
-    private Handler handler;
+public class ExerciseActivity extends Activity implements TextToSpeech.OnInitListener{
+    private static int COUNTDOWN_MESSAGE = 1337; // Message used for async countdown
+    private int timeRemaining; // Handles the remaining time
+    private Exercise exercise; // The current exercise
+    private SevenMinutesApplication app; // Application object, stores global state
+    private TextToSpeech tts; // Used to speak the countdown and any messages
+    private TextView countDown; // countdown TextView needs to be a field so that we can increment it from the count down method
+    private Handler handler; // The message handler used to listen for the countdown messages.
 
+
+    /**
+     * Creates an instance of this activity. Instantiates all local state and sets the text of the TextViews appropriately.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,12 +33,7 @@ public class ExerciseActivity extends Activity{
         // Initiate state
         this.app = (SevenMinutesApplication) this.getApplication();
         this.exercise = this.app.getNextExercise();
-        this.tts = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
-                @Override
-                public void onInit(int status) {
-                }
-            }
-        );
+        this.tts = new TextToSpeech(this, this);
         this.handler = new Handler() {
             @Override
             public void handleMessage(Message msg) {
@@ -42,7 +42,7 @@ public class ExerciseActivity extends Activity{
                 }
             }
         };
-        this.tts.setLanguage(Locale.ENGLISH);
+        this.tts.speak("TEST TEST TEST", TextToSpeech.QUEUE_FLUSH, null);
 
         this.timeRemaining = this.exercise.getDuration();
 
@@ -57,6 +57,9 @@ public class ExerciseActivity extends Activity{
 
     }
 
+    /***
+     * Gets called just before the user sees the view. Used to trigger the countdown.
+     */
     @Override
     protected void onResume() {
         super.onResume();
@@ -64,6 +67,9 @@ public class ExerciseActivity extends Activity{
         this.startCountDown();
     }
 
+    /***
+     * First thing that will happen the activity is no longer visible. Cancels the countdown and kill tts.
+     */
     @Override
     protected void onPause() {
         super.onPause();
@@ -74,11 +80,34 @@ public class ExerciseActivity extends Activity{
         }
     }
 
+    /***
+     * Handles instantiation of the text to speech engine. Sets language to english. Showws a Toast if any error occurs.
+     * @param status TTS engine status.
+     */
+    @Override
+    public void onInit(int status) {
+        if (status == TextToSpeech.SUCCESS) {
+            this.tts.setLanguage(Locale.ENGLISH);
+        } else {
+            Toast t = Toast.makeText(ExerciseActivity.this, "Could not init TTS", Toast.LENGTH_LONG);
+            t.show();
+        }
+    }
+
+    /***
+     * Says opening phrase if any and starts countdown
+     */
     private void startCountDown() {
+        if (!this.exercise.getStartMessage().isEmpty()) {
+            this.tts.speak(this.exercise.getStartMessage(), TextToSpeech.QUEUE_FLUSH, null);
+        }
         handleCountDownTick();
     }
 
-
+    /***
+     * Handles each decrement in the countdown. Will set the countdown TextView and speak the remaining time in all
+     * cases it should. Starts a new activity when the we have no time remaining.
+     */
     private void handleCountDownTick() {
         if(this.timeRemaining == 0) {
             Intent intent = new Intent(this, ExerciseActivity.class);
@@ -87,8 +116,8 @@ public class ExerciseActivity extends Activity{
         } else {
             this.countDown.setText(Integer.toString(this.timeRemaining));
             if (!this.tts.isSpeaking()) {
-                if (this.timeRemaining == this.exercise.getDuration() - 1 && !this.exercise.getStartMessage().isEmpty()) {
-                    this.tts.speak(this.exercise.getStartMessage(), TextToSpeech.QUEUE_FLUSH, null);
+                if (this.exercise.hasSwitch() && this.timeRemaining == this.exercise.getSwitchTime()) {
+                    this.tts.speak(this.exercise.getSwitchMessage(), TextToSpeech.QUEUE_FLUSH, null);
                 } else if (this.timeRemaining == 20 || this.timeRemaining == 10) {
                     this.tts.speak(Integer.toString(this.timeRemaining)+ " seconds left.", TextToSpeech.QUEUE_FLUSH, null);
                 } else if (this.timeRemaining <= 5) {
@@ -99,4 +128,5 @@ public class ExerciseActivity extends Activity{
         }
         this.timeRemaining--;
     }
+
 }

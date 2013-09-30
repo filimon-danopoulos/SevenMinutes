@@ -28,17 +28,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d954b75d-cd83-46b7-bb60-48bdec1d16b9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/anim/expand_from_right.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/anim/shrink_to_left.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/filimon/sevenminutes/Exercise.java" afterPath="$PROJECT_DIR$/src/se/filimon/sevenminutes/Exercise.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/filimon/sevenminutes/ExerciseActivity.java" afterPath="$PROJECT_DIR$/src/se/filimon/sevenminutes/ExerciseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/filimon/sevenminutes/MainActivity.java" afterPath="$PROJECT_DIR$/src/se/filimon/sevenminutes/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/filimon/sevenminutes/SevenMinutesApplication.java" afterPath="$PROJECT_DIR$/src/se/filimon/sevenminutes/SevenMinutesApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SevenMinutes.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380473220025" ignored="false" />
+    <file path="/Dummy.txt" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380518224695" ignored="false" />
     <file path="/README" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380451741428" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xslt-1_0.xsd" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380450757763" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xhtml1-frameset.xsd" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380450757763" ignored="false" />
@@ -62,7 +57,7 @@
     <file path="/AndroidManifest.xml" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380463740780" ignored="false" />
     <file path="/exercise.xml" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380462783810" ignored="false" />
     <file path="/Exercise.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380465995286" ignored="false" />
-    <file path="/ExerciseActivity.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380483451209" ignored="false" />
+    <file path="/ExerciseActivity.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380519866668" ignored="false" />
     <file path="/MainActivity.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380477246298" ignored="false" />
     <file path="/SevenMinutes.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380463399373" ignored="false" />
     <file path="$PROJECT_DIR$/gen/se/filimon/sevenminutes/BuildConfig.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380464292466" ignored="false" />
@@ -132,10 +127,8 @@
       <file leaf-file-name="ExerciseActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/ExerciseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="45" selection-start="1865" selection-end="1865" vertical-scroll-proportion="0.5637584">
-              <folding>
-                <element signature="class#934:1072" expanded="false" />
-              </folding>
+            <state line="108" column="81" selection-start="3957" selection-end="3957" vertical-scroll-proportion="3.2550335">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -622,7 +615,11 @@
       <created>1380473230361</created>
       <updated>1380473230361</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Refined couunt down method. Removed some dedundand code.">
+      <created>1380518237803</created>
+      <updated>1380518237803</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -647,7 +644,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249165" sideWeight="0.670227" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249165" sideWeight="0.670227" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249833" sideWeight="0.670227" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977304" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -698,7 +695,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented a rought count down mechanism and TTS." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refined couunt down method. Removed some dedundand code." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -725,6 +722,7 @@
     <MESSAGE value="Added exercise activity. Modified start activity." />
     <MESSAGE value="Moved Exercise file" />
     <MESSAGE value="Implemented a rought count down mechanism and TTS." />
+    <MESSAGE value="Refined couunt down method. Removed some dedundand code." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -846,10 +844,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/ExerciseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="45" selection-start="1865" selection-end="1865" vertical-scroll-proportion="0.5637584">
-          <folding>
-            <element signature="class#934:1072" expanded="false" />
-          </folding>
+        <state line="108" column="81" selection-start="3957" selection-end="3957" vertical-scroll-proportion="3.2550335">
+          <folding />
         </state>
       </provider>
     </entry>
