@@ -28,11 +28,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d954b75d-cd83-46b7-bb60-48bdec1d16b9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/colors.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-ldpi/ic_launcher.png" afterPath="$PROJECT_DIR$/res/drawable-ldpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_launcher.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SevenMinutes.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381168112244" ignored="false" />
+    <file path="/Dummy.txt" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381169676952" ignored="false" />
     <file path="/README" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380451741428" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xslt-1_0.xsd" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380450757763" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xhtml1-frameset.xsd" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380450757763" ignored="false" />
@@ -132,15 +142,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="expand_from_right.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/anim/expand_from_right.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="35" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="shrink_to_left.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/anim/shrink_to_left.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -159,12 +160,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SevenMinutesApplication.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SevenMinutesApplication.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/SevenMinutesApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="69" selection-start="1856" selection-end="1856" vertical-scroll-proportion="0.76957494">
+            <state line="47" column="69" selection-start="1856" selection-end="1856" vertical-scroll-proportion="0.0">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/settings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="107" column="13" selection-start="5789" selection-end="5789" vertical-scroll-proportion="-55.344826">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="colors.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="1" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="1" selection-start="68" selection-end="110" vertical-scroll-proportion="0.6100478">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exercise.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/exercise.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="40" selection-start="1362" selection-end="1362" vertical-scroll-proportion="-7.6896553">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -195,8 +241,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/README" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/res/layout/start.xml" />
         <option value="$PROJECT_DIR$/src/Exercise.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
@@ -210,7 +254,9 @@
         <option value="$PROJECT_DIR$/src/se/filimon/sevenminutes/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/se/filimon/sevenminutes/ExerciseActivity.java" />
         <option value="$PROJECT_DIR$/src/se/filimon/sevenminutes/SevenMinutesApplication.java" />
+        <option value="$USER_HOME$/Downloads/SevenMinutes/res/layout/settings.xml" />
         <option value="$PROJECT_DIR$/res/layout/settings.xml" />
+        <option value="$PROJECT_DIR$/res/values/colors.xml" />
       </list>
     </option>
   </component>
@@ -297,6 +343,10 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -330,6 +380,74 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-xhdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SevenMinutes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SevenMinutes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-mdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SevenMinutes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SevenMinutes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-ldpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SevenMinutes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SevenMinutes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SevenMinutes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SevenMinutes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="anim" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -345,18 +463,24 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Temp/SevenMinutes" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/SevenMinutes/res/layout/settings.xml" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="se.filimon.sevenminutes" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/drawable-xhdpi" />
+      <recent name="$PROJECT_DIR$/res/drawable-mdpi" />
+      <recent name="$PROJECT_DIR$/res/drawable-ldpi" />
+      <recent name="$PROJECT_DIR$/res/drawable-hdpi" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="se.filimon.sevenminutes" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.SevenMinutes">
@@ -596,7 +720,11 @@
       <created>1380563062002</created>
       <updated>1380563062002</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Messed up my configuration. Seems to work again now.">
+      <created>1381168582846</created>
+      <updated>1381168582847</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -618,7 +746,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249165" sideWeight="0.670227" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18971276" sideWeight="0.670227" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977304" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932532" sideWeight="0.670227" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -672,7 +800,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed application and countdown mechanism." />
+    <option name="LAST_COMMIT_MESSAGE" value="Messed up my configuration. Seems to work again now." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -702,6 +830,7 @@
     <MESSAGE value="Refined couunt down method. Removed some dedundand code." />
     <MESSAGE value="Added some comments." />
     <MESSAGE value="Changed application and countdown mechanism." />
+    <MESSAGE value="Messed up my configuration. Seems to work again now." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -711,27 +840,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/Exercise.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/SevenMinutesApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="111" selection-start="2007" selection-end="2007" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/anim/expand_from_right.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="35" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="86" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
@@ -747,22 +855,6 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="107" selection-start="347" selection-end="347" vertical-scroll-proportion="0.2542373" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/exercise.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="40" selection-start="1362" selection-end="1362" vertical-scroll-proportion="-8.551724" />
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="35" selection-start="915" selection-end="915" vertical-scroll-proportion="0.5259594" />
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
@@ -809,9 +901,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/SevenMinutesApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="69" selection-start="1856" selection-end="1856" vertical-scroll-proportion="0.76957494">
+        <state line="47" column="69" selection-start="1856" selection-end="1856" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/exercise.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="40" selection-start="1362" selection-end="1362" vertical-scroll-proportion="-7.6896553">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/SevenMinutes/res/layout/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="13" selection-start="5789" selection-end="5789" vertical-scroll-proportion="-55.344826">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-ldpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="1" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="1" selection-start="68" selection-end="110" vertical-scroll-proportion="0.6100478">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>
