@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import java.util.ArrayList;
-
 public class MainActivity extends Activity {
     /**
      * Called when the activity is first created.
@@ -16,13 +14,15 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        this.overridePendingTransition(R.anim.shrink_to_left, R.anim.expand_from_right);
+        this.overridePendingTransition(R.anim.expand_from_right, R.anim.shrink_to_left);
 
         this.setContentView(R.layout.main);
 
         Button startButton = (Button) this.findViewById(R.id.start_button);
         startButton.setOnClickListener(startButtonClickedListener);
 
+        Button settingsButton = (Button) this.findViewById(R.id.settings_button);
+        settingsButton.setOnClickListener(this.settingsButtonClickedListener);
     }
 
     @Override
@@ -40,4 +40,11 @@ public class MainActivity extends Activity {
         }
     };
 
+    private Button.OnClickListener settingsButtonClickedListener = new Button.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent =  new Intent(MainActivity.this, SettingsActivity.class);
+            MainActivity.this.startActivity(intent);
+        }
+    };
 }

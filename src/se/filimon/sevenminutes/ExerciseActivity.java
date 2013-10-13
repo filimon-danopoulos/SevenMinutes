@@ -46,7 +46,7 @@ public class ExerciseActivity extends Activity implements TextToSpeech.OnInitLis
 
         this.timeRemaining = this.exercise.getDuration();
 
-        this.overridePendingTransition(R.anim.shrink_to_left, R.anim.expand_from_right);
+        this.overridePendingTransition(R.anim.expand_from_right, R.anim.shrink_to_left);
         this.setContentView(R.layout.exercise);
 
         TextView title = (TextView) this.findViewById(R.id.exercise_name);

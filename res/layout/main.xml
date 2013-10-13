@@ -3,26 +3,31 @@
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
-              android:paddingRight="10dip"
-              android:paddingLeft="10dip">
-    <TextView android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="220dip"
-            android:text="7"
-            android:gravity="center_horizontal"
-            android:typeface="sans"
-            android:textStyle="bold"/>
-    <Button android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Start"
-            android:textAllCaps="true"
-            android:textSize="50dip"
-            android:layout_marginTop="10dip"
-            android:id="@+id/start_button"/>
-    <Button android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Settings"
-            android:layout_marginTop="5dip"
-            android:textSize="25dip"/>
+              android:background="@color/background_color"
+              android:padding="10.0dip">
+    <ImageView android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/logo" />
+    <Button android:textSize="48.0dip"
+            android:textColor="@color/highlight_color"
+            android:background="@color/foreground_color"
+            android:layout_width="fill_parent"
+            android:layout_height="100.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginBottom="10dip"
+            android:id="@+id/start_button"
+            android:text="START"/>
+
+    <Button android:textSize="32.0dip"
+            android:textColor="@color/highlight_color"
+            android:id="@+id/settings_button"
+            android:background="@color/foreground_color"
+            android:layout_width="fill_parent"
+            android:layout_height="70.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:text="SETTINGS"/>
+
 </LinearLayout>
 

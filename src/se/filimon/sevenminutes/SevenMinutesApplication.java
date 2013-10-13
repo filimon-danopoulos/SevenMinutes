@@ -2,12 +2,14 @@ package se.filimon.sevenminutes;
 
 import android.app.Application;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.io.FileInputStream;
+import java.util.*;
 
 public class SevenMinutesApplication extends Application {
 
     private ArrayList<Exercise> exercises = new ArrayList<Exercise>();
+    private HashMap<String, Boolean> settings = new HashMap<String, Boolean>();
+
     private int current = 0;
 
     public void reset() {
@@ -31,6 +33,9 @@ public class SevenMinutesApplication extends Application {
     public void onCreate() {
         super.onCreate();
         this.setExercises();
+        this.setSettings();
+
+
     }
 
     private void setExercises() {
@@ -61,6 +66,14 @@ public class SevenMinutesApplication extends Application {
             this.exercises.add(new Exercise("Stop", 10, "Good job! You are done."));
         }
 
+    }
+
+    private void setSettings() {
+        try {
+            FileInputStream file = this.openFileInput("settings");
+        } catch (Exception ex) {
+
+        }
     }
 }
 
