@@ -142,7 +142,7 @@ public class ExerciseActivity extends Activity implements TextToSpeech.OnInitLis
             } else if ((this.timeRemaining == 20 && this.app.settings.isTwentySecondMarkEnabled) ||
                     (this.timeRemaining == 10 && this.app.settings.isTenSecondMarkEnabled)) {
                 this.say(Integer.toString(this.timeRemaining)+ " seconds left.");
-            } else if (this.timeRemaining <= 5) {
+            } else if (this.timeRemaining <= 5 && this.app.settings.isCountdownEnabled) {
                 this.say(Integer.toString(this.timeRemaining));
             }
             this.handler.sendEmptyMessageDelayed(COUNTDOWN_MESSAGE, 1000); // Trigger next message in 1 sec

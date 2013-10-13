@@ -27,13 +27,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d954b75d-cd83-46b7-bb60-48bdec1d16b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/filimon/sevenminutes/SevenMinutesApplication.java" afterPath="$PROJECT_DIR$/src/se/filimon/sevenminutes/SevenMinutesApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/filimon/sevenminutes/ApplicationSettings.java" afterPath="$PROJECT_DIR$/src/se/filimon/sevenminutes/ApplicationSettings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/filimon/sevenminutes/ExerciseActivity.java" afterPath="$PROJECT_DIR$/src/se/filimon/sevenminutes/ExerciseActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/filimon/sevenminutes/SettingsActivity.java" afterPath="$PROJECT_DIR$/src/se/filimon/sevenminutes/SettingsActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/exercise.xml" afterPath="$PROJECT_DIR$/res/layout/exercise.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/settings.xml" afterPath="$PROJECT_DIR$/res/layout/settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SevenMinutes.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381685626298" ignored="false" />
+    <file path="/Dummy.txt" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381685649576" ignored="false" />
     <file path="/README" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380451741428" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xslt-1_0.xsd" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380450757763" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xhtml1-frameset.xsd" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380450757763" ignored="false" />
@@ -55,18 +58,18 @@
     <file path="/fragment.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381662519048" ignored="false" />
     <file path="/main.xml" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381671679045" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380463740780" ignored="false" />
-    <file path="/exercise.xml" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381685540924" ignored="false" />
+    <file path="/exercise.xml" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381685720391" ignored="false" />
     <file path="/Exercise.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380465995286" ignored="false" />
-    <file path="/ExerciseActivity.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381684947554" ignored="false" />
+    <file path="/ExerciseActivity.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381686137372" ignored="false" />
     <file path="/MainActivity.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381470337507" ignored="false" />
     <file path="/SevenMinutes.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380463399373" ignored="false" />
-    <file path="/SevenMinutesApplication.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381669991123" ignored="false" />
+    <file path="/SevenMinutesApplication.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381685695425" ignored="false" />
     <file path="/shrink_to_right.xml" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380473872135" ignored="false" />
     <file path="/expand_from_right.xml" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380473886311" ignored="false" />
-    <file path="/settings.xml" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381671942018" ignored="false" />
+    <file path="/settings.xml" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381685992267" ignored="false" />
     <file path="/Setings.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381469843272" ignored="false" />
-    <file path="/SettingsActivity.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381673889015" ignored="false" />
-    <file path="/ApplicationSettings.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381670078360" ignored="false" />
+    <file path="/SettingsActivity.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381686117351" ignored="false" />
+    <file path="/ApplicationSettings.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381685895682" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,10 +135,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ExerciseActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ExerciseActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/ExerciseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="46" selection-start="3221" selection-end="3221" vertical-scroll-proportion="0.0">
+            <state line="144" column="86" selection-start="6073" selection-end="6073" vertical-scroll-proportion="0.5302013">
               <folding>
                 <element signature="e#2784#3086#0" expanded="true" />
                 <element signature="e#3071#3072#0" expanded="true" />
@@ -148,19 +151,22 @@
       <file leaf-file-name="SettingsActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/SettingsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="76" selection-start="3155" selection-end="3155" vertical-scroll-proportion="0.0">
+            <state line="89" column="81" selection-start="4227" selection-end="4227" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#2116#2357#0" expanded="true" />
-                <element signature="e#2350#2351#0" expanded="true" />
-                <element signature="e#2444#2689#0" expanded="true" />
-                <element signature="e#2682#2683#0" expanded="true" />
-                <element signature="e#2773#3015#0" expanded="true" />
-                <element signature="e#3008#3009#0" expanded="true" />
-                <element signature="e#3571#3572#0" expanded="true" />
-                <element signature="e#3646#3957#0" expanded="true" />
-                <element signature="e#3950#3951#0" expanded="true" />
-                <element signature="e#4023#4361#0" expanded="true" />
-                <element signature="e#4354#4355#0" expanded="true" />
+                <element signature="e#2376#2617#0" expanded="true" />
+                <element signature="e#2610#2611#0" expanded="true" />
+                <element signature="e#2704#2949#0" expanded="true" />
+                <element signature="e#2942#2943#0" expanded="true" />
+                <element signature="e#3033#3275#0" expanded="true" />
+                <element signature="e#3268#3269#0" expanded="true" />
+                <element signature="e#3361#3599#0" expanded="true" />
+                <element signature="e#3592#3593#0" expanded="true" />
+                <element signature="e#3681#4243#0" expanded="true" />
+                <element signature="e#4236#4237#0" expanded="true" />
+                <element signature="e#4311#4622#0" expanded="true" />
+                <element signature="e#4615#4616#0" expanded="true" />
+                <element signature="e#4688#5026#0" expanded="true" />
+                <element signature="e#5019#5020#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -169,16 +175,16 @@
       <file leaf-file-name="ApplicationSettings.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/ApplicationSettings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="57" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
+            <state line="9" column="45" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SevenMinutesApplication.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SevenMinutesApplication.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/SevenMinutesApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="21" selection-start="3371" selection-end="3371" vertical-scroll-proportion="0.3325893">
+            <state line="87" column="16" selection-start="3366" selection-end="3366" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -190,7 +196,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="46" selection-start="3061" selection-end="3501" vertical-scroll-proportion="-12.931034">
+            <state line="45" column="31" selection-start="2391" selection-end="2418" vertical-scroll-proportion="-8.896552">
               <folding />
             </state>
           </provider>
@@ -223,7 +229,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="78" selection-start="885" selection-end="885" vertical-scroll-proportion="-7.862069">
+            <state line="47" column="13" selection-start="2239" selection-end="2239" vertical-scroll-proportion="-8.103448">
               <folding />
             </state>
           </provider>
@@ -256,13 +262,13 @@
         <option value="$PROJECT_DIR$/res/anim/shrink_to_left.xml" />
         <option value="$PROJECT_DIR$/src/se/filimon/sevenminutes/Setings.java" />
         <option value="$PROJECT_DIR$/src/se/filimon/sevenminutes/MainActivity.java" />
-        <option value="$PROJECT_DIR$/src/se/filimon/sevenminutes/ApplicationSettings.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/src/se/filimon/sevenminutes/SevenMinutesApplication.java" />
+        <option value="$PROJECT_DIR$/res/layout/exercise.xml" />
+        <option value="$PROJECT_DIR$/src/se/filimon/sevenminutes/ApplicationSettings.java" />
         <option value="$PROJECT_DIR$/res/layout/settings.xml" />
         <option value="$PROJECT_DIR$/src/se/filimon/sevenminutes/SettingsActivity.java" />
         <option value="$PROJECT_DIR$/src/se/filimon/sevenminutes/ExerciseActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/exercise.xml" />
-        <option value="$PROJECT_DIR$/src/se/filimon/sevenminutes/SevenMinutesApplication.java" />
       </list>
     </option>
   </component>
@@ -667,7 +673,11 @@
       <created>1381685383227</created>
       <updated>1381685383227</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Changed layout slightly and re-enabled som exercises I accidentaly left out last commit,">
+      <created>1381685654791</created>
+      <updated>1381685654791</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -685,14 +695,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843792" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843792" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21228305" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18971276" sideWeight="0.6715621" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977304" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18971276" sideWeight="0.670227" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977304" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249833" sideWeight="0.670227" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -840,23 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/settings.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="46" selection-start="3061" selection-end="3501" vertical-scroll-proportion="-12.931034">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/ApplicationSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="57" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -864,46 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="51" selection-start="603" selection-end="603" vertical-scroll-proportion="-0.51724136">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/ExerciseActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="46" selection-start="3221" selection-end="3221" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#2784#3086#0" expanded="true" />
-            <element signature="e#3071#3072#0" expanded="true" />
-            <element signature="method#startCountDown#0;class#ExerciseActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/exercise.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="78" selection-start="885" selection-end="885" vertical-scroll-proportion="-7.862069">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/SettingsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="76" selection-start="3155" selection-end="3155" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#2116#2357#0" expanded="true" />
-            <element signature="e#2350#2351#0" expanded="true" />
-            <element signature="e#2444#2689#0" expanded="true" />
-            <element signature="e#2682#2683#0" expanded="true" />
-            <element signature="e#2773#3015#0" expanded="true" />
-            <element signature="e#3008#3009#0" expanded="true" />
-            <element signature="e#3571#3572#0" expanded="true" />
-            <element signature="e#3646#3957#0" expanded="true" />
-            <element signature="e#3950#3951#0" expanded="true" />
-            <element signature="e#4023#4361#0" expanded="true" />
-            <element signature="e#4354#4355#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -916,8 +869,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/SevenMinutesApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="21" selection-start="3371" selection-end="3371" vertical-scroll-proportion="0.3325893">
+        <state line="87" column="16" selection-start="3366" selection-end="3366" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/exercise.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="13" selection-start="2239" selection-end="2239" vertical-scroll-proportion="-8.103448">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/ApplicationSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="45" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/settings.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="31" selection-start="2391" selection-end="2418" vertical-scroll-proportion="-8.896552">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/SettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="81" selection-start="4227" selection-end="4227" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#2376#2617#0" expanded="true" />
+            <element signature="e#2610#2611#0" expanded="true" />
+            <element signature="e#2704#2949#0" expanded="true" />
+            <element signature="e#2942#2943#0" expanded="true" />
+            <element signature="e#3033#3275#0" expanded="true" />
+            <element signature="e#3268#3269#0" expanded="true" />
+            <element signature="e#3361#3599#0" expanded="true" />
+            <element signature="e#3592#3593#0" expanded="true" />
+            <element signature="e#3681#4243#0" expanded="true" />
+            <element signature="e#4236#4237#0" expanded="true" />
+            <element signature="e#4311#4622#0" expanded="true" />
+            <element signature="e#4615#4616#0" expanded="true" />
+            <element signature="e#4688#5026#0" expanded="true" />
+            <element signature="e#5019#5020#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/ExerciseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="86" selection-start="6073" selection-end="6073" vertical-scroll-proportion="0.5302013">
+          <folding>
+            <element signature="e#2784#3086#0" expanded="true" />
+            <element signature="e#3071#3072#0" expanded="true" />
+            <element signature="method#startCountDown#0;class#ExerciseActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

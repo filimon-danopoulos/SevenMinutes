@@ -7,4 +7,5 @@ public class ApplicationSettings implements Serializable {
     public boolean isNextExerciseEnabled = true;
     public boolean isTwentySecondMarkEnabled = true;
     public boolean isTenSecondMarkEnabled = true;
+    public boolean isCountdownEnabled = true;
 }

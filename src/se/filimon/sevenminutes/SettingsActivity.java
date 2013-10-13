@@ -14,7 +14,7 @@ public class SettingsActivity extends Activity {
     private CheckBox readNextExerciseCheckBox;
     private CheckBox readTwentySecondsCheckBox;
     private CheckBox readTenSecondsCheckBox;
-
+    private CheckBox countDownEnabledCheckbox;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +43,10 @@ public class SettingsActivity extends Activity {
         this.readTenSecondsCheckBox = (CheckBox) this.findViewById(R.id.read_ten_second_mark_checkbox);
         this.readTenSecondsCheckBox.setOnCheckedChangeListener(this.readTenSecondsCheckChangeListener);
 
+        this.countDownEnabledCheckbox = (CheckBox) this.findViewById(R.id.count_down_enabled_checkbox);
+        this.countDownEnabledCheckbox.setOnCheckedChangeListener(this.countdownEnabledCheckChangeListener);
+
+
         this.setCheckBoxValues();
 
     }
@@ -68,6 +72,13 @@ public class SettingsActivity extends Activity {
         }
     };
 
+    private CheckBox.OnCheckedChangeListener countdownEnabledCheckChangeListener = new CheckBox.OnCheckedChangeListener() {
+        @Override
+        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+            SettingsActivity.this.app.settings.isCountdownEnabled = isChecked;
+        }
+    };
+
     private CheckBox.OnCheckedChangeListener soundEnabledCheckChangeListener = new CheckBox.OnCheckedChangeListener() {
         @Override
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -75,8 +86,8 @@ public class SettingsActivity extends Activity {
 
             SettingsActivity.this.readTwentySecondsCheckBox.setEnabled(isChecked);
             SettingsActivity.this.readTenSecondsCheckBox.setEnabled(isChecked);
-
             SettingsActivity.this.readNextExerciseCheckBox.setEnabled(isChecked);
+            SettingsActivity.this.countDownEnabledCheckbox.setEnabled(isChecked);
         }
     };
 
@@ -110,5 +121,8 @@ public class SettingsActivity extends Activity {
 
         this.readNextExerciseCheckBox.setEnabled(this.app.settings.isSoundEnabled);
         this.readNextExerciseCheckBox.setChecked(this.app.settings.isNextExerciseEnabled);
+
+        this.countDownEnabledCheckbox.setEnabled(this.app.settings.isSoundEnabled);
+        this.countDownEnabledCheckbox.setChecked(this.app.settings.isCountdownEnabled);
     }
 }

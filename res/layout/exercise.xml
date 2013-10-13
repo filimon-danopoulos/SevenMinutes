@@ -63,6 +63,7 @@
               android:textColor="@color/highlight_color"
               android:visibility="gone"
               android:gravity="center"
+              android:padding="10dip"
               android:text="Well done! Don't forget to stretch and have a snack."
               android:layout_marginBottom="30dip"/>/>
 
