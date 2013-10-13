@@ -27,16 +27,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d954b75d-cd83-46b7-bb60-48bdec1d16b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/filimon/sevenminutes/ApplicationSettings.java" afterPath="$PROJECT_DIR$/src/se/filimon/sevenminutes/ApplicationSettings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/filimon/sevenminutes/ExerciseActivity.java" afterPath="$PROJECT_DIR$/src/se/filimon/sevenminutes/ExerciseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/filimon/sevenminutes/SettingsActivity.java" afterPath="$PROJECT_DIR$/src/se/filimon/sevenminutes/SettingsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/exercise.xml" afterPath="$PROJECT_DIR$/res/layout/exercise.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/settings.xml" afterPath="$PROJECT_DIR$/res/layout/settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SevenMinutes.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381685649576" ignored="false" />
+    <file path="/Dummy.txt" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381686206802" ignored="false" />
     <file path="/README" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380451741428" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xslt-1_0.xsd" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380450757763" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xhtml1-frameset.xsd" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380450757763" ignored="false" />
@@ -57,7 +54,7 @@
     <file path="/README.md" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380454238438" ignored="false" />
     <file path="/fragment.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381662519048" ignored="false" />
     <file path="/main.xml" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381671679045" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380463740780" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381686242332" ignored="false" />
     <file path="/exercise.xml" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381685720391" ignored="false" />
     <file path="/Exercise.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1380465995286" ignored="false" />
     <file path="/ExerciseActivity.java" changelist="d954b75d-cd83-46b7-bb60-48bdec1d16b9" time="1381686137372" ignored="false" />
@@ -135,15 +132,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ExerciseActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ExerciseActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/ExerciseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="86" selection-start="6073" selection-end="6073" vertical-scroll-proportion="0.5302013">
+            <state line="144" column="86" selection-start="6073" selection-end="6073" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#2784#3086#0" expanded="true" />
                 <element signature="e#3071#3072#0" expanded="true" />
                 <element signature="method#startCountDown#0;class#ExerciseActivity#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="80" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="51" selection-start="50" selection-end="50" vertical-scroll-proportion="0.033557046">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -253,8 +268,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/res/anim/shrink_to_right.xml" />
         <option value="$PROJECT_DIR$/src/se/filimon/sevenminutes/Exercise.java" />
         <option value="$USER_HOME$/Downloads/SevenMinutes/res/layout/settings.xml" />
         <option value="$PROJECT_DIR$/res/values/colors.xml" />
@@ -269,6 +282,8 @@
         <option value="$PROJECT_DIR$/res/layout/settings.xml" />
         <option value="$PROJECT_DIR$/src/se/filimon/sevenminutes/SettingsActivity.java" />
         <option value="$PROJECT_DIR$/src/se/filimon/sevenminutes/ExerciseActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
       </list>
     </option>
   </component>
@@ -353,6 +368,10 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -369,6 +388,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SevenMinutes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SevenMinutes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -677,7 +710,11 @@
       <created>1381685654791</created>
       <updated>1381685654791</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added option for disabling countdown">
+      <created>1381686211896</created>
+      <updated>1381686211896</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -753,7 +790,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed layout slightly and re-enabled som exercises I accidentaly left out last commit," />
+    <option name="LAST_COMMIT_MESSAGE" value="Added option for disabling countdown" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -791,6 +828,7 @@
     <MESSAGE value="Changed animations slightly." />
     <MESSAGE value="Changed handling of last exercise. Added some graphical elements to the last exercise." />
     <MESSAGE value="Changed layout slightly and re-enabled som exercises I accidentaly left out last commit," />
+    <MESSAGE value="Added option for disabling countdown" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -800,18 +838,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="107" selection-start="347" selection-end="347" vertical-scroll-proportion="0.2542373" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="81" selection-start="347" selection-end="347" vertical-scroll-proportion="0.19067797">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/Exercise.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="0" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.0">
@@ -925,12 +951,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/se/filimon/sevenminutes/ExerciseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="86" selection-start="6073" selection-end="6073" vertical-scroll-proportion="0.5302013">
+        <state line="144" column="86" selection-start="6073" selection-end="6073" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#2784#3086#0" expanded="true" />
             <element signature="e#3071#3072#0" expanded="true" />
             <element signature="method#startCountDown#0;class#ExerciseActivity#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="80" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="51" selection-start="50" selection-end="50" vertical-scroll-proportion="0.033557046">
+          <folding />
         </state>
       </provider>
     </entry>
