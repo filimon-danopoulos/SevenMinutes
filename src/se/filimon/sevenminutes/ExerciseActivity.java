@@ -7,6 +7,7 @@ import android.os.CountDownTimer;
 import android.os.Handler;
 import android.os.Message;
 import android.speech.tts.TextToSpeech;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -51,12 +52,35 @@ public class ExerciseActivity extends Activity implements TextToSpeech.OnInitLis
 
         TextView title = (TextView) this.findViewById(R.id.exercise_name);
         title.setText(this.exercise.getName());
-
-        TextView nextExercise = (TextView) this.findViewById(R.id.exercise_next);
-        nextExercise.setText(app.getNextExerciseName());
-
         this.countDown = (TextView) this.findViewById(R.id.exercise_countdown);
-        this.startCountDown();
+
+        if (this.app.getNextExerciseName().isEmpty()) {
+            this.countDown.setVisibility(View.GONE);
+
+            TextView nextLabel = (TextView) this.findViewById(R.id.next_exercise_label);
+            nextLabel.setVisibility(View.GONE);
+
+            TextView nextText = (TextView) this.findViewById(R.id.exercise_next);
+            nextText.setVisibility(View.GONE);
+
+            Button cancelButton = (Button) this.findViewById(R.id.cancel_exercise_button);
+            cancelButton.setVisibility(View.VISIBLE);
+            cancelButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    ExerciseActivity.this.finish();
+                    ExerciseActivity.this.overridePendingTransition(R.anim.expand_from_right, R.anim.shrink_to_left);
+                }
+            });
+
+            TextView endText = (TextView) this.findViewById(R.id.exercise_end_text);
+            endText.setVisibility(View.VISIBLE);
+        } else {
+            TextView nextExercise = (TextView) this.findViewById(R.id.exercise_next);
+            nextExercise.setText(this.app.getNextExerciseName());
+
+            this.startCountDown();
+        }
     }
 
     /***

@@ -41,7 +41,7 @@ public class SevenMinutesApplication extends Application {
 
     private void setExercises() {
         // This is probable not the best way to to do this.
-        this.addExercise(new Exercise("Jumping Jacks", 30, "Begin Jumping Jacks."),  true, false);
+        /*this.addExercise(new Exercise("Jumping Jacks", 30, "Begin Jumping Jacks."),  true, false);
         this.addExercise(new Exercise("Wall Sit", 30, "Begin Wall Sit."), false, false);
         this.addExercise(new Exercise("Push ups", 30, "Begin Push ups."), false, false);
         this.addExercise(new Exercise("Crunches", 30, "Begin Crunches."), false, false);
@@ -51,7 +51,7 @@ public class SevenMinutesApplication extends Application {
         this.addExercise(new Exercise("Plank", 30, "Begin Plank."), false, false);
         this.addExercise(new Exercise("High Knees", 30, "Begin High Knees."), false, false);
         this.addExercise(new Exercise("Lunges", 30, "Begin Lunges."), false, false);
-        this.addExercise(new Exercise("Push up with twist", 30, "Begin Push up with twist."), false, false);
+        this.addExercise(new Exercise("Push up with twist", 30, "Begin Push up with twist."), false, false);    */
         this.addExercise(new Exercise("Side plank", 30, "Begin Side plank.", "Change side!", 15), false, true);
     }
 
@@ -64,7 +64,7 @@ public class SevenMinutesApplication extends Application {
         }
         this.exercises.add(exercise);
         if (isLast) {
-            this.exercises.add(new Exercise("Stop", 10, "Good job! You are done."));
+            this.exercises.add(new Exercise("Finish", 10, "Good job! You are done. Don't forget to stretch."));
         }
 
     }

@@ -44,4 +44,26 @@
               android:textColor="@color/foreground_color"
               android:layout_below="@id/exercise_name"
               android:layout_above="@id/next_exercise_label"/>
+    <Button android:textSize="32.0dip"
+            android:textColor="@color/highlight_color"
+            android:id="@+id/cancel_exercise_button"
+            android:background="@color/foreground_color"
+            android:layout_width="fill_parent"
+            android:layout_height="70.0dip"
+            android:layout_margin="5dip"
+            android:text="Back To Main"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"/>
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/exercise_end_text"
+              android:layout_above="@id/cancel_exercise_button"
+              android:layout_below="@id/exercise_name"
+              android:textSize="42dip"
+              android:textColor="@color/foreground_color"
+              android:visibility="gone"
+              android:gravity="center"
+              android:text="Well done! Don't forget to stretch and have a snack."
+              android:layout_marginBottom="30dip"/>/>
+
 </RelativeLayout>
