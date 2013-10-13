@@ -70,6 +70,8 @@ public class ExerciseActivity extends Activity implements TextToSpeech.OnInitLis
             this.tts.stop();
             this.tts.shutdown();
         }
+        this.finish();
+        this.overridePendingTransition(R.anim.expand_from_right, R.anim.shrink_to_left);
     }
 
     /***
@@ -82,7 +84,7 @@ public class ExerciseActivity extends Activity implements TextToSpeech.OnInitLis
         if (status == TextToSpeech.SUCCESS) {
             this.tts.setLanguage(Locale.ENGLISH);
             // We only want to say the start message if the TTS engine is initialized.
-            if (!this.exercise.getStartMessage().isEmpty()) {
+            if (!this.exercise.getStartMessage().isEmpty() && this.app.settings.isNextExerciseEnabled) {
                 this.say(this.exercise.getStartMessage());
             }
         } else {
@@ -113,7 +115,8 @@ public class ExerciseActivity extends Activity implements TextToSpeech.OnInitLis
             this.countDown.setText(Integer.toString(this.timeRemaining));
             if (this.exercise.hasSwitch() && this.timeRemaining == this.exercise.getSwitchTime()) {
                 this.say(this.exercise.getSwitchMessage());
-            } else if (this.timeRemaining == 20 || this.timeRemaining == 10) {
+            } else if ((this.timeRemaining == 20 && this.app.settings.isTwentySecondMarkEnabled) ||
+                    (this.timeRemaining == 10 && this.app.settings.isTenSecondMarkEnabled)) {
                 this.say(Integer.toString(this.timeRemaining)+ " seconds left.");
             } else if (this.timeRemaining <= 5) {
                 this.say(Integer.toString(this.timeRemaining));
@@ -128,7 +131,7 @@ public class ExerciseActivity extends Activity implements TextToSpeech.OnInitLis
      * @param message The message to speak with TTS.
      */
     private void say(String message) {
-        if (!this.tts.isSpeaking()) { // We don't speak if we are already speaking.
+        if (!this.tts.isSpeaking() && this.app.settings.isSoundEnabled) { // We don't speak if we are already speaking.
             this.tts.speak(message, TextToSpeech.QUEUE_FLUSH, null);
         }
     }

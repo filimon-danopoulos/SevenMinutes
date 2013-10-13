@@ -85,6 +85,7 @@ public class SettingsActivity extends Activity {
         public void onClick(View v) {
             SettingsActivity.this.app.resetSettings();
             SettingsActivity.this.finish();
+            SettingsActivity.this.overridePendingTransition(R.anim.expand_from_right, R.anim.shrink_to_left);
         }
     };
 
@@ -93,6 +94,7 @@ public class SettingsActivity extends Activity {
         public void onClick(View v) {
             if (SettingsActivity.this.app.saveSettings()) {
                 SettingsActivity.this.finish();
+                SettingsActivity.this.overridePendingTransition(R.anim.expand_from_right, R.anim.shrink_to_left);
             }
         }
     };
