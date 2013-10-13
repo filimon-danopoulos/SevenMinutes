@@ -1,14 +1,15 @@
 package se.filimon.sevenminutes;
 
 import android.app.Application;
+import android.widget.Toast;
 
-import java.io.FileInputStream;
+import java.io.*;
 import java.util.*;
 
 public class SevenMinutesApplication extends Application {
 
     private ArrayList<Exercise> exercises = new ArrayList<Exercise>();
-    private HashMap<String, Boolean> settings = new HashMap<String, Boolean>();
+    public ApplicationSettings settings = new ApplicationSettings();
 
     private int current = 0;
 
@@ -33,7 +34,7 @@ public class SevenMinutesApplication extends Application {
     public void onCreate() {
         super.onCreate();
         this.setExercises();
-        this.setSettings();
+        this.loadSettings();
 
 
     }
@@ -68,12 +69,38 @@ public class SevenMinutesApplication extends Application {
 
     }
 
-    private void setSettings() {
+    private void loadSettings() {
         try {
-            FileInputStream file = this.openFileInput("settings");
+            FileInputStream fileStream = this.openFileInput("settings");
+            ObjectInputStream objectStream = new ObjectInputStream(fileStream);
+            this.settings = (ApplicationSettings) objectStream.readObject();
+            objectStream.close();
         } catch (Exception ex) {
-
+            Toast toast = Toast.makeText(this, "Could not load settings, reverting to defaults.", Toast.LENGTH_SHORT);
+            toast.show();
         }
+    }
+
+    public boolean saveSettings() {
+        try {
+            File file = new File(this.getFilesDir(), "settings");
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            FileOutputStream fileStream = this.openFileOutput("settings", MODE_PRIVATE);
+            ObjectOutputStream objectStream = new ObjectOutputStream(fileStream);
+            objectStream.writeObject(this.settings);
+            objectStream.close();
+            return true;
+        } catch (Exception ex) {
+            Toast toast = Toast.makeText(this, "Could not save settings. Please try again.", Toast.LENGTH_SHORT);
+            toast.show();
+            return false;
+        }
+    }
+
+    public void resetSettings() {
+        this.loadSettings();
     }
 }
 

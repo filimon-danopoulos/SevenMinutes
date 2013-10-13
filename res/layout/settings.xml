@@ -20,12 +20,6 @@
               android:layout_margin="10.0dip"
               android:text="Enable Sound"/>
     <CheckBox android:textColor="@color/highlight_color"
-              android:id="@+id/read_first_exercise_checkbox"
-              android:layout_width="fill_parent"
-              android:layout_height="wrap_content"
-              android:layout_margin="10.0dip"
-              android:text="Read first exercise"/>
-    <CheckBox android:textColor="@color/highlight_color"
               android:id="@+id/read_next_exercise_checkbox"
               android:layout_width="fill_parent"
               android:layout_height="wrap_content"
