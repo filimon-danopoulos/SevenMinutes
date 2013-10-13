@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:background="@color/background_color"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent">
     <TextView android:textSize="24.0dip"
+              android:id="@+id/sound_label"
               android:textColor="@color/background_color"
               android:gravity="center"
               android:background="@color/highlight_color"
@@ -12,36 +12,42 @@
               android:paddingBottom="5.0dip"
               android:layout_width="fill_parent"
               android:layout_height="wrap_content"
-              android:text="Sound"/>
+              android:text="Sound"
+              android:layout_alignParentTop="true"/>
     <CheckBox android:textColor="@color/highlight_color"
               android:id="@+id/sound_enabled_checkbox"
               android:layout_width="fill_parent"
               android:layout_height="wrap_content"
               android:layout_margin="10.0dip"
-              android:text="Enable Sound"/>
+              android:text="Enable Sound"
+              android:layout_below="@id/sound_label"/>
     <CheckBox android:textColor="@color/highlight_color"
               android:id="@+id/read_next_exercise_checkbox"
               android:layout_width="fill_parent"
               android:layout_height="wrap_content"
               android:layout_margin="10.0dip"
-              android:text="Read next exercise"/>
+              android:text="Read next exercise"
+              android:layout_below="@id/sound_enabled_checkbox"/>
     <CheckBox android:textColor="@color/highlight_color"
               android:id="@+id/read_twenty_second_mark_checkbox"
               android:layout_width="fill_parent"
               android:layout_height="wrap_content"
               android:layout_margin="10.0dip"
-              android:text="Read twenty second mark"/>
+              android:text="Read twenty second mark"
+              android:layout_below="@id/read_next_exercise_checkbox"/>
     <CheckBox android:textColor="@color/highlight_color"
               android:id="@+id/read_ten_second_mark_checkbox"
               android:layout_width="fill_parent"
               android:layout_height="wrap_content"
               android:layout_margin="10.0dip"
-              android:text="Read ten second mark"/>
+              android:text="Read ten second mark"
+              android:layout_below="@id/read_twenty_second_mark_checkbox"/>
     <LinearLayout android:orientation="horizontal"
                   android:padding="10.0dip"
                   android:layout_width="fill_parent"
                   android:layout_height="wrap_content"
-                  android:weightSum="1.0">
+                  android:weightSum="1.0"
+                  android:layout_alignParentBottom="true">
         <Button android:textSize="32.0dip"
                 android:textColor="@color/highlight_color"
                 android:id="@+id/save_settings_button"
@@ -61,4 +67,4 @@
                 android:text="Cancel"
                 android:layout_weight="0.5"/>
     </LinearLayout>
-</LinearLayout>
+</RelativeLayout>
